@@ -4,28 +4,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/card"
     android:orientation="vertical"
     android:layout_margin="16dp"
     android:background="#255165"
     tools:context=".MainActivity"
     >
-    <Button
-        android:layout_height="50dp"
-        android:layout_width="50dp"
-        android:id="@+id/btn_integrantes"
-        android:drawableBottom="@drawable/acercade"
-        android:onClick="acercade"
-        android:layout_marginTop="10dp"
-        android:layout_marginLeft="10dp"
-        />
+
     <TextView
+        android:id="@+id/txt_login"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="LOGIN"
         android:textSize="40dp"
         android:textColor="#ffff"
         android:layout_gravity="center"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="150dp"
         android:textStyle="bold"/>
 
     <ImageView
@@ -62,6 +56,15 @@
         android:text="Entrar"
         android:layout_gravity="center"
         android:onClick="entrar"
+        />
+    <Button
+        android:id="@+id/btn_integrantes"
+        android:layout_height="80dp"
+        android:layout_width="70dp"
+        android:drawableBottom="@drawable/acercade"
+        android:onClick="acercade"
+        android:layout_marginTop="130dp"
+        android:layout_marginLeft="10dp"
         />
 
 

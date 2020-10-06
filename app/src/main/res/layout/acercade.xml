@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#255165"
+    android:id="@+id/card_acercade"
+
+    >
+    <ImageView
+        android:id="@+id/img_harry1"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:src="@drawable/harry1"
+        android:layout_gravity="center"
+             />
+    <TextView
+        android:id="@+id/txt_integrantes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="INTEGRANTES"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:textColor="#ffff"
+        android:textSize="30sp"
+
+        />
+
+    <TextView
+        android:id="@+id/nom_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35dp"
+        android:text="FELIPE ALONSO PINO BRIONES"
+        android:orientation="vertical"
+        android:textColor="#ffff"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+
+        />
+    <TextView
+        android:id="@+id/nom_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35dp"
+        android:text="GONSALO ANDRÉS GAJARDO MORA"
+        android:textColor="#ffff"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+
+        />
+    <TextView
+        android:id="@+id/nom_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35dp"
+        android:text="RODRIGO MAURICIO MUÑOZ SALAS"
+        android:orientation="vertical"
+        android:textColor="#ffff"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        />
+    <ImageView
+        android:id="@+id/img_harry2"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:src="@drawable/harry1"
+        android:layout_gravity="center"
+        />
+</LinearLayout>
