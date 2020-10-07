@@ -13,7 +13,7 @@ import org.json.JSONObject;
 
 import java.util.ArrayList;
 import java.util.List;
-import model.HarryPotter;
+import com.inacap.felipe_gonsa_rodri.model.HarryPotter;
 
 import cz.msebera.android.httpclient.Header;
 
@@ -51,32 +51,19 @@ public class MainActivity extends AppCompatActivity {
 
     public void processJson (String res){
         try {
-//            JSONObject root = new JSONObject(res);
-
             JSONArray harry = new JSONArray(res);
-
-
             List<HarryPotter> list = new ArrayList<>();
-
             for (int i = 0; i < harry.length(); i++) {
-
                 JSONObject harryObj = harry.getJSONObject(i);
-
-
-//creamos un objeto de la clase User
-
-
-                String name = harryObj.getString("name");
-                String species = harryObj.getString("species");
-                String gender = harryObj.getString("gender");
-                String house = harryObj.getString("house");
-                String dateOfBird = harryObj.getString("dateOfBird");
-                String yearOfBird = harryObj.getString("yearOfBird");
-
+                    String name = harryObj.getString("name");
+                    String species = harryObj.getString("species");
+                    String gender = harryObj.getString("gender");
+                    String house = harryObj.getString("house");
+                    String dateOfBird = harryObj.getString("dateOfBird");
+                    String yearOfBird = harryObj.getString("yearOfBird");
                 JSONObject wand = harryObj.getJSONObject("wand");
-
-                String wood = wand.getString("wood");
-                String core = wand.getString("core");
+                    String wood = wand.getString("wood");
+                    String core = wand.getString("core");
 
                 HarryPotter harryPotter = new HarryPotter(name, species, gender, house, dateOfBird, yearOfBird, wood, core);
                 Log.d("INFO", harryPotter.getCore() + " " + harryPotter.getDateOfBird() + " " + harryPotter.getGender() + " " + harryPotter.getHouse() + " " +
