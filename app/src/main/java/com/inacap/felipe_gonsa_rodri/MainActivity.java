@@ -3,6 +3,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
 
 import com.loopj.android.http.AsyncHttpClient;
 import com.loopj.android.http.AsyncHttpResponseHandler;
@@ -100,4 +101,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
+    public void entrar(View view) {
+    }
+
+    public void acercade(View view) {
+    }
 }
