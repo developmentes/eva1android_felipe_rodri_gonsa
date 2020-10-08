@@ -43,6 +43,7 @@
         android:text="GONSALO ANDRÉS GAJARDO MORA"
         android:textColor="#ffff"
         android:textSize="15sp"
+
         android:layout_below="@id/nom_1"
         android:fontFamily="@font/harry_potter"
         />
