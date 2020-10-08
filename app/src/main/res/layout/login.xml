@@ -11,7 +11,8 @@
         android:fontFamily="@font/harry_potter"
         android:layout_marginTop="80dp"
         android:layout_marginLeft="30dp"
-        android:layout_marginRight="30dp"android:textSize="20sp"
+        android:layout_marginRight="30dp"
+        android:textSize="20sp"
         android:hint="Usuario"
         android:inputType="text"/>
 
@@ -22,6 +23,7 @@
     android:fontFamily="@font/harry_potter"
     android:layout_marginLeft="30dp"
     android:layout_marginRight="30dp"
+
     android:layout_below="@id/txt_usuario"
     android:hint="Password"
     android:inputType="number"/>
