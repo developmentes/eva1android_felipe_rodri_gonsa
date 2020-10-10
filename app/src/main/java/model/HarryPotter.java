@@ -8,21 +8,23 @@ public class HarryPotter {
     private String species;
     private  String gender;
     private String house;
-    private String DateOfBird;
-    private String yearsOfBird;
+    private String DateOfBirth;
+    private int yearOfBirth;
     private String wood;
     private  String core;
-
-    public HarryPotter(String name, String species, String gender, String house, String dateOfBird, String yearsOfBird, String wood, String core) {
+    private String image;
+    public HarryPotter(String name, String species, String gender, String house, String dateOfBirth, int yearOfBirth, String wood, String core, String image) {
         this.name = name;
         this.species = species;
         this.gender = gender;
         this.house = house;
-        DateOfBird = dateOfBird;
-        this.yearsOfBird = yearsOfBird;
+        DateOfBirth = dateOfBirth;
+        this.yearOfBirth = yearOfBirth;
         this.wood = wood;
         this.core = core;
+        this.image = image;
     }
+
 
     public String getName() {
         return name;
@@ -57,19 +59,19 @@ public class HarryPotter {
     }
 
     public String getDateOfBird() {
-        return DateOfBird;
+        return DateOfBirth;
     }
 
     public void setDateOfBird(String dateOfBird) {
-        DateOfBird = dateOfBird;
+        DateOfBirth = dateOfBird;
     }
 
-    public String getYearsOfBird() {
-        return yearsOfBird;
+    public int getYearOfBirth() {
+        return yearOfBirth;
     }
 
-    public void setYearsOfBird(String yearsOfBird) {
-        this.yearsOfBird = yearsOfBird;
+    public void setYearOfBirth(int yearOfBirth) {
+        this.yearOfBirth = yearOfBirth;
     }
 
     public String getWood() {
@@ -87,4 +89,15 @@ public class HarryPotter {
     public void setCore(String core) {
         this.core = core;
     }
+
+    public String getImage() {
+        return image;
+    }
+
+    public void setImage(String image) {
+        this.image = image;
+    }
+
+
+
 }
