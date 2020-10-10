@@ -1,9 +1,13 @@
 package com.inacap.felipe_gonsa_rodri;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import com.loopj.android.http.AsyncHttpClient;
 import com.loopj.android.http.AsyncHttpResponseHandler;
@@ -19,13 +23,16 @@ import cz.msebera.android.httpclient.Header;
 
 public class MainActivity extends AppCompatActivity {
 
-
+    private TextView txt;
+    private Button boton;
     public static final String URL = "http://hp-api.herokuapp.com/api/characters";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        txt = findViewById(R.id.txt_usuario);
+        boton =findViewById(R.id.creadores);
         processHttp();
     }
 
@@ -89,9 +96,16 @@ public class MainActivity extends AppCompatActivity {
 
 
     public void entrar(View view) {
+        if(txt.getText().toString().isEmpty()){
+            Toast.makeText(this,"Ingrese un Usuario",Toast.LENGTH_LONG).show();
+        }
+        Intent intent = new Intent(this,MainActivity.class);
+        startActivity(intent);
     }
 
 
     public void acercade(View view) {
+        Intent intent = new Intent(this,CreadoresActivity.class);
+        startActivity(intent);
     }
 }
