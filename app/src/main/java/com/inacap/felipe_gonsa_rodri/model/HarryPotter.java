@@ -8,7 +8,7 @@ public class HarryPotter {
     private String species;
     private  String gender;
     private String house;
-    private String DateOfBirth;
+    private String dateOfBirth;
     private int yearOfBirth;
     private String wood;
     private  String core;
@@ -18,7 +18,7 @@ public class HarryPotter {
         this.species = species;
         this.gender = gender;
         this.house = house;
-        DateOfBirth = dateOfBirth;
+        this.dateOfBirth = dateOfBirth;
         this.yearOfBirth = yearOfBirth;
         this.wood = wood;
         this.core = core;
@@ -59,11 +59,11 @@ public class HarryPotter {
     }
 
     public String getDateOfBird() {
-        return DateOfBirth;
+        return dateOfBirth;
     }
 
     public void setDateOfBird(String dateOfBird) {
-        DateOfBirth = dateOfBird;
+        dateOfBirth = dateOfBird;
     }
 
     public int getYearOfBirth() {

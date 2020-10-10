@@ -19,7 +19,7 @@ import java.util.List;
 
 import model.HarryPotter;
 
-public class HarryAdapter extends RecyclerView.Adapter<HarryAdapter.HarryHolder>{
+public class HarryAdapter extends RecyclerView.Adapter<HarryAdapter.HarryHolder> {
 
     public List<HarryPotter> list;
     public Activity activity;
