@@ -2,40 +2,26 @@
 <RelativeLayout
 
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/background_relative"
+    android:id="@+id/item_card"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_margin="5dp"
-    android:layout_marginHorizontal="16dp"
-    android:background="@drawable/background_harry1"
-    >
+    android:layout_marginHorizontal="16dp" >
+<!--    android:background="@drawable/background_harry1"-->
 
 
 
 
 
-    <RelativeLayout
-        android:id="@+id/fondo_relative"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@drawable/fondo_potter">
-
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:id="@+id/item_card"
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:background="@drawable/card_harry"
-        android:layout_margin="20dp"
-        android:padding="20dp">
 
     <de.hdodenhof.circleimageview.CircleImageView
+
         android:id="@+id/harrycircleimg"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:padding="5dp"
         android:src="@drawable/harry_img"
+        android:background="@drawable/card_harry"
         />
 
 
@@ -77,61 +63,7 @@
             android:layout_below="@id/speciesharry"
             />
 
-<!--        <TextView-->
-<!--            android:id="@+id/speciesharry2"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:textSize="30sp"-->
-<!--            android:text="Harry Potter"-->
-<!--            android:layout_toRightOf="@id/harrycircleimg"-->
-<!--            android:layout_centerHorizontal="true"-->
-<!--            android:fontFamily="@font/girassol_regular"-->
-<!--            android:textColor="#B54949"-->
-<!--            />-->
-
-<!--        <TextView-->
-<!--            android:id="@+id/genderharry2"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:textSize="30sp"-->
-<!--            android:text="Harry Potter"-->
-<!--            android:layout_toRightOf="@id/harrycircleimg"-->
-<!--            android:layout_centerHorizontal="true"-->
-<!--            android:fontFamily="@font/girassol_regular"-->
-<!--            android:textColor="#B54949"-->
-<!--            />-->
-
-<!--        <TextView-->
-<!--            android:id="@+id/nameharry2"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:textSize="30sp"-->
-<!--            android:text="Harry Potter"-->
-<!--            android:layout_toRightOf="@id/harrycircleimg"-->
-<!--            android:layout_centerHorizontal="true"-->
-<!--            android:fontFamily="@font/girassol_regular"-->
-<!--            android:textColor="#B54949"-->
-<!--            />-->
-
-        <Button
-            android:id="@+id/botonharry"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="10dp"
-            android:text="More of Harry"
-            android:textColor="#fff"
-            android:background="#fff"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
-            android:backgroundTint="@color/design_default_color_primary"
-
-            />
-
-    </RelativeLayout>
-
-
-
-
 
 
 </RelativeLayout>
+
