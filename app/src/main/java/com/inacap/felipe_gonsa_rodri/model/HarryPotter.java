@@ -1,9 +1,6 @@
-package model;
+package com.inacap.felipe_gonsa_rodri.model;
 
 public class HarryPotter {
-
-
-
     private String name;
     private String species;
     private  String gender;
